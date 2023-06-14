@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">    
+    <link rel="shortcut icon" href="media/favicon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <title> SiCI | Panel principal </title>
+</head>
+
+<body>
+    
+    <header class="container-fluid">
+
+        <div class="row al-ri">
+
+            <div class="header__logo">
+                <div class="header__contenedorLogo pd20">
+                    <a href="index.html"><img src="media/Logo.svg" alt="" class="header__img"></a>
+                </div>
+                                
+                <div class="col navMobile">
+                    <button class="btn btn-secondary hamburguesa" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#"><li><i class="fa-solid fa-user nav__icon"></i>mcarrizo</a></li>
+                        <li><a class="dropdown-item" href="#"><li><i class="fa-solid fa-bell nav__icon"></i>Notificaciones</a></li>
+                        <hr>
+                        <li><a class="dropdown-item" href="#"><li><i class="fa-solid fa-table-cells-large nav__icon"></i>Inicio</a></li>
+                        <li><a class="dropdown-item" href="pages/proyecto.html"><li><i class="fa-solid fa-folder nav__icon"></i>Proyectos</a></li>
+                        <li><a class="dropdown-item" href="#"><li><i class="fa-regular fa-file nav__icon"></i>Repositorio</a></li>
+                        <li><a class="dropdown-item" href="#"><li><i class="fa-solid fa-comments nav__icon"></i>Mensajes</a></li>
+                        <hr>
+                        <li><a class="dropdown-item" href="#"><li><i class="fa-solid fa-chart-column nav__icon"></i>Administrador</a></li>
+                        <li><a class="dropdown-item" href="#"><li><i class="fa-solid fa-file-invoice nav__icon"></i>Contabilidad</a></li>
+                    </ul>
+                </div>                
+            </div>
+
+            <div class="sobrePanel">
+                <div class="saludo" >
+                    <h1>Bienvenido,</h1> <h2><b>Matias Carrizo</b></h2>
+                </div>
+
+                <div class="usuario">                       
+                    <ul>
+                        <li><i class="fa-solid fa-bell"></i></li>
+                        <li>mcarrizo  <i class="fa-solid fa-angle-down"></i></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+
+    </header>
+
+    <main class="container-fluid" >
+        <div class="row">
+            <div class="navDesktop" >
+
+                <ul class="nav__list">
+                    <a href="index.html" class="nav__link"><li><i class="fa-solid fa-table-cells-large nav__icon"></i>Inicio</li></a>
+                    <a href="pages/proyecto.html" class="nav__link" ><li><i class="fa-solid fa-folder nav__icon"></i>Proyectos</li></a>
+                        <a href="pages/proyecto.html" class="nav__link"><li class="nav__subitems"><i class="fa-solid fa-chevron-right fa-2xs nav__icon"></i>I-0010-08</li></a>
+                        <a href="pages/proyecto.html" class="nav__link"><li class="nav__subitems"><i class="fa-solid fa-chevron-right fa-2xs nav__icon"></i>I-0016-32</li></a>
+                        <a href="pages/proyecto.html" class="nav__link"><li class="nav__subitems"><i class="fa-solid fa-chevron-right fa-2xs nav__icon"></i>I-0040-01</li></a>
+                    <a href="pages/repositorio.html" class="nav__link"><li><i class="fa-regular fa-file nav__icon"></i>Repositorio</li></a>
+                    <a href="pages/mensajeria.html" class="nav__link"><li><i class="fa-solid fa-comments nav__icon"></i>Mensajes</li></a>
+                    <hr>
+                    <a href="" class="nav__link"><li><i class="fa-solid fa-chart-column nav__icon"></i>Administrador</li></a>
+                    <a href="" class="nav__link"><li><i class="fa-solid fa-file-invoice nav__icon"></i>Contabilidad</li></a>
+                </ul>
+                
+
+            </div>
+            <div class="col" >
+                <div class="row" >
+                    <div id="carouselExampleCaptions" class="carousel slide col-lg-8 col-md-8">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="./media/repoback.jpg  " class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Cumpleaños "Matias"</h5>
+                              <p>¡¡Felicidades!!🎉😎</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./media/avisaroback.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Se inició la Obra: ISK-0016-35</h5>
+                                <p>Bateria 1001 - Laje (Ingeniería de detalles) </p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="./media/docs.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Third slide label</h5>
+                              <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+
+                <div class="row tarjetero">
+                
+                    <div class="tarjeta ejec ">
+                        <a href="pages/documento.html"> 
+                            <div class="encabezado">
+                                <div class="icono">
+                                    <img src="media/PecomShell.svg" alt="" >
+                                </div>
+                                <b> I-0016-32-CE-MC-01</b>
+                                <small>Vence: 16/05/2023 (10 días) </small>
+                            </div>                    
+                            <p>Memoria de cálculo - Estructura metálica nuevo depósito</p>
+                        </a>
+                        <h6 class="ejecucion">Ejecución</h6>
+                        <div class="botones">
+                            <a href="" title="Asignar HH"><i class="fa-solid fa-circle-plus"></i></a>
+                            <a href="" title="Entregar Tarea"><i class="fa-solid fa-circle-check"></i></a>
+                        </div>  
+                    </div>           
+    
+                    <div class="tarjeta ejec ">
+                        <a href="pages/documento.html">
+                            <div class="encabezado">
+                                <div class="icono">
+                                    <img src="media/PecomShell.svg" alt="" >
+                                </div>
+                                <b> I-0016-32-CE-MC-01</b>
+                                <small>Vence: 16/05/2023 (10 días) </small>
+                            </div>
+                            <p>Memoria de cálculo - Fundación Estructura metálica nuevo depósito</p>
+                        </a>
+                        <h6 class="ejecucion">Ejecución</h6>
+                        <div class="botones">
+                            <a href="" title="Asignar HH"><i class="fa-solid fa-circle-plus"></i></a>
+                            <a href="" title="Entregar Tarea"><i class="fa-solid fa-circle-check"></i></a>
+                        </div>  
+                    </div>    
+    
+                    <div class="tarjeta sc ">
+                        <a href="pages/documento.html">
+                            <div class="encabezado">
+                                <div class="icono">
+                                    <img src="media/PecomShell.svg" alt="" >
+                                </div>
+                                <b> I-0016-32-CE-MC-01</b>
+                                <small>Vence: 16/05/2023 (10 días) </small>
+                            </div>
+                            <p>Memoria de cálculo - Fundación Estructura metálica nuevo depósito</p>
+                        </a>
+                        <h6 class="sinComenzar">Sin comenzar</h6>
+                        <a href="" title="Comenzar Tarea"><i class="fa-solid fa-circle-play"></i></a>
+                    </div>
+    
+                    <div class="tarjeta sc ">
+                        <a href="pages/documento.html">
+                            <div class="encabezado">
+                                <div class="icono">
+                                    <img src="media/PecomShell.svg" alt="" >
+                                </div>
+                                <b> I-0016-32-CE-MC-01</b>
+                                <small>Vence: 16/05/2023 (10 días) </small>
+                            </div>
+                            <p>Memoria de cálculo - Fundación Estructura metálica nuevo depósito</p>
+                        </a>
+                        <h6 class="sinComenzar">Sin comenzar</h6>
+                        <a href="" title="Comenzar Tarea"><i class="fa-solid fa-circle-play"></i></a>
+                    </div>
+    
+                    <div class="tarjeta sc ">
+                        <a href="pages/documento.html">
+                            <div class="encabezado">
+                                <div class="icono">
+                                    <img src="media/PecomShell.svg" alt="" >
+                                </div>
+                                <b> I-0016-32-CE-MC-01</b>
+                                <small>Vence: 16/05/2023 (10 días) </small>
+                            </div>
+                            <p>Memoria de cálculo - Fundación Estructura metálica nuevo depósito</p>
+                        </a>
+                        <h6 class="sinComenzar">Sin comenzar</h6>
+                        <a href="" title="Comenzar Tarea"><i class="fa-solid fa-circle-play"></i></a>
+                    </div>
+
+                </div>              
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="container-fluid" >
+        <div class="row">
+            <div class="col-4">
+                <small> Designed by <b> Matias Carrizo </b></small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
