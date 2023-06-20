@@ -47,6 +47,7 @@ main{
     grid-area: main;
     background-color: $fondoMain;
     height: calc(100vh - $altoHeader - $altoFooter - 2 * $paddingHeader);
+    overflow: scroll;
 }
 
 footer{

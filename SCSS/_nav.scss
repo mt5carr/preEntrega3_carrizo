@@ -8,7 +8,7 @@ nav{
     }    
     
     flex-direction: column;
-    
+
     .nav__logo{
         display: flex;        
         justify-content: center;
@@ -17,16 +17,43 @@ nav{
             justify-content: center;
             width: 120px;
             height: 50px;
+            margin: 5px 0 10px 0;
+             
         }
     }
+
     .nav__botones{
-        .nav__desktop{
+        .navDesktop{
             .nav__list{
                 list-style: none;
                 text-decoration: none;
             }
 
+            .nav__icon{
+                margin: 0 18px;
+                align-self: center;
+                width: 1em;
+            }
 
+            .nav__link{
+                color: $textoNav;
+                text-decoration: none;
+            }
+
+            a{
+                &:hover{
+                color: $enfacis
+                }   
+            }   
+
+            hr{
+                color: $base-claro;
+            }
+
+            .nav__subitems{
+                font-size: 12px;
+                margin-left: 1.2em;
+            }
         }
 
     }

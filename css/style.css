@@ -40,6 +40,7 @@ main {
   grid-area: main;
   background-color: #e0e0e0;
   height: calc(100vh - 50px - 30px - 20px);
+  overflow: scroll;
 }
 
 footer {
@@ -119,10 +120,132 @@ nav .nav__logo .nav__img {
   justify-content: center;
   width: 120px;
   height: 50px;
+  margin: 5px 0 10px 0;
 }
-nav .nav__botones .nav__desktop .nav__list {
+nav .nav__botones .navDesktop .nav__list {
   list-style: none;
   text-decoration: none;
+}
+nav .nav__botones .navDesktop .nav__icon {
+  margin: 0 18px;
+  align-self: center;
+  width: 1em;
+}
+nav .nav__botones .navDesktop .nav__link {
+  color: #ffffff;
+  text-decoration: none;
+}
+nav .nav__botones .navDesktop a:hover {
+  color: #2D87F0;
+}
+nav .nav__botones .navDesktop hr {
+  color: #e0e0e0;
+}
+nav .nav__botones .navDesktop .nav__subitems {
+  font-size: 12px;
+  margin-left: 1.2em;
+}
+
+.avisador h2 {
+  padding: 0%;
+  margin: 0%;
+}
+
+.carousel-item {
+  padding: 20px;
+}
+
+.carousel-item img {
+  height: 15em;
+  padding: 0;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos de las tarjetas */
+.tarjetero {
+  background-color: #e0e0e0;
+  overflow: hidden;
+  justify-content: start;
+}
+.tarjetero .tarjeta {
+  position: relative;
+  display: inline-block;
+  background-color: #ffffff;
+  width: 300px;
+  height: 200px;
+  padding: 1.5em;
+  border-radius: 20px;
+  margin: 1em;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+}
+.tarjetero .tarjeta .encabezado {
+  padding: 0 0 0.5em 0;
+}
+.tarjetero .tarjeta h1 {
+  font-size: 1.2em;
+}
+.tarjetero .tarjeta small {
+  font-size: 0.8em;
+}
+.tarjetero .tarjeta p {
+  padding-bottom: 2em;
+  font-size: 0.9em;
+  height: 3em;
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+.tarjetero .tarjeta .icono {
+  background-color: #e0e0e0;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3em;
+  line-height: 70px;
+  height: 3em;
+  margin-right: 1em;
+  border-radius: 10px;
+  text-align: center;
+}
+.tarjetero .tarjeta--sc img {
+  filter: blur(0.25em) grayscale(100%);
+  width: 35px;
+}
+.tarjetero .tarjeta--sc i {
+  text-align: right;
+  color: #2b2b2b;
+  font-size: 4em;
+  float: right;
+  margin-bottom: 0.5em;
+  margin-top: -0.5em;
+}
+.tarjetero .tarjeta--sc i:hover {
+  color: #2D87F0;
+}
+.tarjetero .tarjeta--sc h1 {
+  color: #e0e0e0;
+}
+.tarjetero .tarjeta--sc p {
+  color: #e0e0e0;
+}
+.tarjetero .tarjeta--ejec img {
+  width: 35px;
+}
+.tarjetero .tarjeta--ejec .botones {
+  position: absolute;
+  left: 200px;
+  top: 162px;
+}
+.tarjetero .tarjeta--ejec i {
+  text-align: right;
+  color: var(--base-oscuro);
+  font-size: 1.5em;
+  float: right;
+  margin-right: 0.5em;
+}
+.tarjetero .tarjeta--ejec i:hover {
+  color: var(--enfacis);
 }
 
 footer {
