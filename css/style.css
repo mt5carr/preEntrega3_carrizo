@@ -164,9 +164,20 @@ nav .nav__botones .navDesktop .nav__subitems {
 
 /* Estilos de las tarjetas */
 .tarjetero {
+  display: flex;
+  flex-wrap: wrap;
   background-color: #e0e0e0;
   overflow: hidden;
-  justify-content: start;
+}
+@media (min-width: 860px) {
+  .tarjetero {
+    justify-content: start;
+  }
+}
+@media (max-width: 860px) {
+  .tarjetero {
+    justify-content: center;
+  }
 }
 .tarjetero .tarjeta {
   position: relative;
@@ -195,6 +206,10 @@ nav .nav__botones .navDesktop .nav__subitems {
   overflow: hidden;
   margin-bottom: 1em;
 }
+.tarjetero .tarjeta a {
+  text-decoration: none;
+  color: black;
+}
 .tarjetero .tarjeta .icono {
   background-color: #e0e0e0;
   float: left;
@@ -207,6 +222,37 @@ nav .nav__botones .navDesktop .nav__subitems {
   margin-right: 1em;
   border-radius: 10px;
   text-align: center;
+}
+.tarjetero .tarjeta .ejecucion {
+  position: absolute;
+  left: 25px;
+  top: 160px;
+  color: #ffffff;
+  background-color: #2D87F0;
+  font-size: 0.8em;
+  font-weight: 400;
+  padding: 0.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  float: left;
+  border-radius: 0.5em;
+  margin: 0;
+  text-align: center;
+}
+.tarjetero .tarjeta .sinComenzar {
+  position: absolute;
+  left: 25px;
+  top: 160px;
+  color: #2b2b2b;
+  background-color: #e0e0e0;
+  font-size: 0.8em;
+  font-weight: 400;
+  padding: 0.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  float: left;
+  border-radius: 0.5em;
+  margin: 0;
 }
 .tarjetero .tarjeta--sc img {
   filter: blur(0.25em) grayscale(100%);
@@ -229,6 +275,11 @@ nav .nav__botones .navDesktop .nav__subitems {
 .tarjetero .tarjeta--sc p {
   color: #e0e0e0;
 }
+.tarjetero .tarjeta--sc .botonIniciar {
+  position: absolute;
+  right: 30px;
+  bottom: -20px;
+}
 .tarjetero .tarjeta--ejec img {
   width: 35px;
 }
@@ -239,13 +290,13 @@ nav .nav__botones .navDesktop .nav__subitems {
 }
 .tarjetero .tarjeta--ejec i {
   text-align: right;
-  color: var(--base-oscuro);
+  color: #2b2b2b;
   font-size: 1.5em;
   float: right;
   margin-right: 0.5em;
 }
 .tarjetero .tarjeta--ejec i:hover {
-  color: var(--enfacis);
+  color: #2D87F0;
 }
 
 footer {
