@@ -13,12 +13,23 @@ header{
             width: 100%;
             height: 60px;
             background-color: $fondoHeaderMobile;   
-            justify-content: center;
+            justify-content: space-between;
+
             .header__img{
                 justify-content: center;
                 width: 120px;
                 margin: 10px;                
-            }         
+            }      
+            .hamburguesa{
+                background-color: transparent;
+                border: none;
+                font-size: 30px;
+                color: $contraste;
+            } 
+            
+            i{
+                margin-right: 10px;
+            }
         }    
         .header__usuario{
             display: none;

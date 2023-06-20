@@ -1,38 +1,41 @@
-
-// Vista
-
-$vista: desktop;
-
-
-// Fuentes
+// FUENTES ----
 $fuente: 'Roboto', sans-serif;
 
-// Colores
+// COLORES ----
+// - Paleta colores
 $base-oscuro: #2b2b2b;
 $base-claro: #e0e0e0;
 $enfacis: #2D87F0;
 $contraste: #ffffff;
 
+// - Header
 $fondoHeader: $contraste;
 $fondoHeaderMobile: $base-oscuro;
 
-
+// - Nav
 $fondoNav: $base-oscuro;
 $textoNav: $contraste;
 
+// - Main
 $fondoMain: $base-claro;
 $fondoTarjetero: $base-claro;
 $fondoTarjeta: $contraste;
 $fondoIconTarjeta: $base-claro;
 $icono: $base-oscuro;
 
+//      -- Proyectos
+$fondoObra:url('../media/avisaroback.jpg');
+$letraObra: $contraste;
+$fondoTablaObra: $contraste;
+$fordeFilaTabla: $base-oscuro;
 
+
+// - Footer
 $fondoFooter: $contraste;
 
 
-
-
-// Tamaños conenedores
+// TAMAÑO CONTENEDORES ----
 $altoHeader: 50px;
 $altoFooter: 30px;
-$paddingHeader: 10px;
+
+$paddingHeader: 0px;
