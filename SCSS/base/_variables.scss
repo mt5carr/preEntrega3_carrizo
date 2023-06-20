@@ -1,5 +1,27 @@
+
+// Vista
+
+$vista: desktop;
+
+
+// Fuentes
 $fuente: 'Roboto', sans-serif;
+
+// Colores
 $base-oscuro: #2b2b2b;
 $base-claro: #e0e0e0;
 $enfacis: #2D87F0;
 $contraste: #ffffff;
+
+$fondoHeader: $contraste;
+$fondoHeaderMobile: $base-oscuro;
+
+$fondoNav: $base-oscuro;
+$fondoMain: $base-claro;
+$fondoFooter: $contraste;
+
+
+// Tamaños conenedores
+$altoHeader: 50px;
+$altoFooter: 30px;
+$paddingHeader: 10px;

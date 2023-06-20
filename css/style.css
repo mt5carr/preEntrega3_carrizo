@@ -1,3 +1,132 @@
+html {
+  font-family: "Roboto", sans-serif;
+}
 
+body {
+  /* reseteo el body */
+  margin: 0;
+  padding: 0;
+  /* fin reseteo */
+  display: grid;
+}
+@media (min-width: 860px) {
+  body {
+    grid-template-columns: 250px auto;
+    grid-template-areas: "nav header" "nav main" "nav footer";
+  }
+}
+@media (max-width: 860px) {
+  body {
+    grid-template-columns: auto;
+    grid-template-areas: "header" "main" "footer";
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  grid-area: header;
+  height: 50px;
+  background-color: #ffffff;
+}
+
+nav {
+  grid-area: nav;
+  height: 100vh;
+  background-color: #2b2b2b;
+}
+
+main {
+  grid-area: main;
+  background-color: #e0e0e0;
+  height: calc(100vh - 50px - 30px - 20px);
+}
+
+footer {
+  display: flex;
+  grid-area: footer;
+  height: 30px;
+  background-color: #ffffff;
+}
+
+header {
+  padding: 10px;
+  display: flex;
+}
+@media (max-width: 860px) {
+  header {
+    flex-direction: column;
+    height: auto;
+  }
+  header .header__logo {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    background-color: #2b2b2b;
+    justify-content: center;
+  }
+  header .header__logo .header__img {
+    justify-content: center;
+    width: 120px;
+    margin: 10px;
+  }
+  header .header__usuario {
+    display: none;
+  }
+}
+@media (min-width: 860px) {
+  header {
+    flex-direction: row;
+  }
+  header .header__logo {
+    display: none;
+  }
+}
+header .header__barra {
+  display: flex;
+  justify-content: space-between;
+}
+header .header__barra .header__saludo {
+  display: flex;
+  align-items: baseline;
+  width: 100%;
+}
+header .header__barra .header__saludo h1 {
+  display: inline;
+  align-items: center;
+  margin: 0px;
+  margin-right: 10px;
+  font-size: 2em;
+}
+header .header__barra .header__usuario ul {
+  list-style: none;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 860px) {
+  nav {
+    display: none;
+  }
+}
+nav .nav__logo {
+  display: flex;
+  justify-content: center;
+}
+nav .nav__logo .nav__img {
+  justify-content: center;
+  width: 120px;
+  height: 50px;
+}
+nav .nav__botones .nav__desktop .nav__list {
+  list-style: none;
+  text-decoration: none;
+}
+
+footer {
+  justify-content: center;
+}
 
 /*# sourceMappingURL=style.css.map */
