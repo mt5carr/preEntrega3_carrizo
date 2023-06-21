@@ -1,8 +1,8 @@
 # Tercer Pre-entrega curso DISEÑO WEB 📲- CODERHOUSE
 ---
-## Consideraciones
+## Consideraciones 📢
 
-+ El presente proyecto corresponde a la tercer pre-entrega del curso de CODERHOUSE
++ El presente proyecto corresponde a la tercer pre-entrega del curso de CODERHOUSE 🎉
 + Las páginas se maquetaron con grids para los elementos principales tales como header, nav, main y footer. 
 + Los contenedores principales poseen características tipo flex.
 + Se utilizó el Framework Bootstrap para elemenetos tales como menú desplegable (dropdown) y el carrusel del index. La conexión a bootstrap se realiza mediante CDN. Se hace uso de elementos tipo icons de Fontawesome los cuales fueron descargados y utilizados en el proyecto.
