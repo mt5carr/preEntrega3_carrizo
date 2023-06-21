@@ -199,6 +199,7 @@ nav .nav__botones .navDesktop .nav__subitems {
   border-radius: 20px;
   margin: 1em;
   box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+  animation: tarjetaIntro 2s;
 }
 .tarjetero .tarjeta .encabezado {
   padding: 0 0 0.5em 0;
@@ -278,6 +279,7 @@ nav .nav__botones .navDesktop .nav__subitems {
 }
 .tarjetero .tarjeta--sc i:hover {
   color: #2D87F0;
+  animation: hoverBoton 1s;
 }
 .tarjetero .tarjeta--sc h1 {
   color: #e0e0e0;
@@ -307,8 +309,20 @@ nav .nav__botones .navDesktop .nav__subitems {
 }
 .tarjetero .tarjeta--ejec i:hover {
   color: #2D87F0;
+  animation: hoverBoton 1s;
 }
 
+@keyframes tarjetaIntro {
+  0% {
+    transform: rotateX(90deg);
+    color: #e0e0e0;
+  }
+}
+@keyframes hoverBoton {
+  50% {
+    transform: scale(1.2);
+  }
+}
 /* Estilos Pantalla de Proyectos*/
 .informe .obra {
   background-color: #2b2b2b;
@@ -435,6 +449,9 @@ nav .nav__botones .navDesktop .nav__subitems {
 }
 .informe a:hover {
   color: #2D87F0;
+}
+.informe i:hover {
+  animation: hoverBoton 1s;
 }
 .informe .estado {
   position: absolute;
