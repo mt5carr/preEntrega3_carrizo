@@ -41,6 +41,7 @@ nav{
     grid-area: nav;
     height: 100vh;
     background-color: $fondoNav;
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(80, 80, 80));
 }
 
 main{

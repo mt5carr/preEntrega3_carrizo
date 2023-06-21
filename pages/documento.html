@@ -7,63 +7,57 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/all.min.css">    
+    <link rel="stylesheet" href="../css/all.min.css">  
     <link rel="shortcut icon" href="../media/favicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/estilos.css">
 
-    <title> SiCI | Documento </title>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>SiCI | ISK-0016-32-CE-MC-01</title>
 </head>
 <body>
-    
-    <header class="container-fluid">
+    <header>        
 
-        <div class="row al-ri">
-
-            <div class="header__logo">
-                <div class="header__contenedorLogo pd20">
-                    <a href="../index.html"><img src="../media/Logo.svg" alt="" class="header__img"></a>
-                </div>
-                                
-                <div class="col navMobile">
-                    <button class="btn btn-secondary hamburguesa" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <i class="fa-solid fa-bars"></i>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#"><li><i class="fa-solid fa-user nav__icon"></i>mcarrizo</a></li>
-                        <li><a class="dropdown-item" href="#"><li><i class="fa-solid fa-bell nav__icon"></i>Notificaciones</a></li>
-                        <hr>
-                        <li><a class="dropdown-item" href="../index.html"><li><i class="fa-solid fa-table-cells-large nav__icon"></i>Inicio</a></li>
-                        <li><a class="dropdown-item" href="proyecto.html"><li><i class="fa-solid fa-folder nav__icon"></i>Proyectos</a></li>
-                        <li><a class="dropdown-item" href=""><li><i class="fa-regular fa-file nav__icon"></i>Repositorio</a></li>
-                        <li><a class="dropdown-item" href=""><li><i class="fa-solid fa-comments nav__icon"></i>Mensajes</a></li>
-                        <hr>
-                        <li><a class="dropdown-item" href="#"><li><i class="fa-solid fa-chart-column nav__icon"></i>Administrador</a></li>
-                        <li><a class="dropdown-item" href="#"><li><i class="fa-solid fa-file-invoice nav__icon"></i>Contabilidad</a></li>
-                    </ul>
-                </div>
-                
-            </div>
-
-            <div class="sobrePanel">
-                <div class="saludo" >
-                    <h1>Bienvenido,</h1> <h2><b>Matias Carrizo</b></h2>
-                </div>
-
-                <div class="usuario">                       
-                    <ul>
-                        <li><i class="fa-solid fa-bell"></i></li>
-                        <li>mcarrizo  <i class="fa-solid fa-angle-down"></i></li>
-                    </ul>
-                </div>
-            </div>
-            
+        <div class="header__logo">
+            <a href="index.html"><img src="../media/Logo.svg" alt="" class="header__img"></a>
+            <div class="navMobile">
+                <button class="btn btn-secondary hamburguesa" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#"><li><i class="fa-solid fa-user nav__icon"></i>mcarrizo</a></li>
+                    <li><a class="dropdown-item" href="#"><li><i class="fa-solid fa-bell nav__icon"></i>Notificaciones</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="../index.html"><li><i class="fa-solid fa-table-cells-large nav__icon"></i>Inicio</a></li>
+                    <li><a class="dropdown-item" href="proyecto.html"><li><i class="fa-solid fa-folder nav__icon"></i>Proyectos</a></li>
+                    <li><a class="dropdown-item" href="#"><li><i class="fa-regular fa-file nav__icon"></i>Repositorio</a></li>
+                    <li><a class="dropdown-item" href="#"><li><i class="fa-solid fa-comments nav__icon"></i>Mensajes</a></li>
+                    <hr>
+                    <li><a class="dropdown-item" href="#"><li><i class="fa-solid fa-chart-column nav__icon"></i>Administrador</a></li>
+                    <li><a class="dropdown-item" href="#"><li><i class="fa-solid fa-file-invoice nav__icon"></i>Contabilidad</a></li>
+                </ul>
+            </div>             
         </div>
 
+        <div class="header_barra">
+            <div class="header__saludo" >
+                <h1>Bienvenido,   Matias Carrizo </h1>
+            </div>
+
+            <div class="header__usuario">                       
+                <ul>
+                    <li><i class="fa-solid fa-bell"></i></li>
+                    <li>mcarrizo<i class="fa-solid fa-angle-down"></i></li>
+                </ul>
+            </div>  
+        </div>        
     </header>
 
-    <main class="container-fluid" >
-        <div class="row">
+    <nav>
+        <div class="nav__logo">
+            <a href="../index.html"><img src="../media/Logo.svg" alt="" class="nav__img"></a>
+        </div>
+
+        <div class="nav__botones">
             <div class="navDesktop" >
                 <ul class="nav__list">
                     <a href="../index.html" class="nav__link"><li><i class="fa-solid fa-table-cells-large nav__icon"></i>Inicio</li></a>
@@ -71,81 +65,86 @@
                         <a href="proyecto.html" class="nav__link"><li class="nav__subitems"><i class="fa-solid fa-chevron-right fa-2xs nav__icon"></i>I-0010-08</li></a>
                         <a href="proyecto.html" class="nav__link"><li class="nav__subitems"><i class="fa-solid fa-chevron-right fa-2xs nav__icon"></i>I-0016-32</li></a>
                         <a href="proyecto.html" class="nav__link"><li class="nav__subitems"><i class="fa-solid fa-chevron-right fa-2xs nav__icon"></i>I-0040-01</li></a>
-                    <a href="" class="nav__link"><li><i class="fa-regular fa-file nav__icon"></i>Repositorio</li></a>
-                    <a href="" class="nav__link"><li><i class="fa-solid fa-comments nav__icon"></i>Mensajes</li></a>
+                    <a href="#" class="nav__link"><li><i class="fa-regular fa-file nav__icon"></i>Repositorio</li></a>
+                    <a href="#" class="nav__link"><li><i class="fa-solid fa-comments nav__icon"></i>Mensajes</li></a>
                     <hr>
                     <a href="" class="nav__link"><li><i class="fa-solid fa-chart-column nav__icon"></i>Administrador</li></a>
                     <a href="" class="nav__link"><li><i class="fa-solid fa-file-invoice nav__icon"></i>Contabilidad</li></a>
-                </ul>                
+                </ul>
+                
 
             </div>
-            <div class="col" >
-                <div class="row informe al-ri" >
 
-                    <div class="documento">
-                        Documento: I-0016-32-CE-MC-01 
-                        <span class="estado">Ejecución</span>
-                        <small> 
-                            <p>Memoria de cálculo - Fundación Estructura metálica nuevo depósito</p>
-                            <br>                    
-                            N° PECOM: <b>AH45-C-004</b>
-                            <br>
-                            N° SHELL: <b>BAN-40001-C-1234</b>
-                        </small>
-                        <div class="botones">
-                            <a href="" title="Asignar HH"><i class="fa-solid fa-circle-plus"></i></a>
-                            <a href="" title="Entregar Tarea"><i class="fa-solid fa-circle-check"></i></a>
-                        </div>  
-                    </div>
-
-                    <div class="tabla">
-                        <table>
-                            <tr>
-                                <td>Rev.</td>
-                                <td>Elabora</td>
-                                <td>Revisa</td>
-                                <td>Emisión</td>
-                                <td>Ver mas</td>
-                            </tr>
-                            <tr>
-                                <td>AA</td>
-                                <td>VLO</td>
-                                <td>LMC</td>
-                                <td>2</td>
-                                <td>
-                                    <a href="documento.html" title="Ver Detalles"><i class="fa-solid fa-eye"></i></a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>AB</td>
-                                <td>MJM</td>
-                                <td>LMC</td>
-                                <td>5</td>
-                                <td>
-                                    <a href="documento.html" title="Ver Detalles"><i class="fa-solid fa-eye"></i></a>
-                                </td>
-                            </tr>    
-    
-                        </table>
-                        <div class="botones">
-                            <a href="" title="Agregar Revisión"><i class="fa-solid fa-circle-plus"></i></a>
-                        </div>  
-                    </div>                 
-                </div>
-
-                <div class="row tarjetero">                
-                    <div class="datosDoc">
-                        <img src="../media/ejemploDoc.jpg" alt="">
-                    </div>
-                </div>     
-            </div>
         </div>
+
+    </nav>
+
+    <main>    
+        <div class="informe" >
+            <div class="documento">
+                Documento: <b>ISK-0016-32-CE-MC-01 </b>
+                <span class="estado">Ejecución</span>
+                <small> 
+                    <p>Memoria de cálculo - Fundación Estructura metálica nuevo depósito</p>
+                    <br>                    
+                    N° PECOM: <b>AH45-C-004</b>
+                    <br>
+                    N° SHELL: <b>BAN-40001-C-1234</b>
+                </small>
+                <div class="botones">
+                    <a href="" title="Asignar HH"><i class="fa-solid fa-circle-plus"></i></a>
+                    <a href="" title="Entregar Tarea"><i class="fa-solid fa-circle-check"></i></a>
+                </div>  
+            </div>
+
+            <div class="tabla">
+                <table>
+                    <tr>
+                        <th>Rev.</th>
+                        <th>Elabora</th>
+                        <th>Revisa</th>
+                        <th>Emisión</th>
+                        <th>Ver mas</th>
+                    </tr>
+                    <tr>
+                        <td>AA</td>
+                        <td>VLO</td>
+                        <td>LMC</td>
+                        <td>2</td>
+                        <td>
+                            <a href="documento.html" title="Ver Detalles"><i class="fa-solid fa-eye"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>AB</td>
+                        <td>MJM</td>
+                        <td>LMC</td>
+                        <td>5</td>
+                        <td>
+                            <a href="documento.html" title="Ver Detalles"><i class="fa-solid fa-eye"></i></a>
+                        </td>
+                    </tr>    
+
+                </table>
+                <div class="botonRev">
+                    <a href="" title="Agregar Revisión"><i class="fa-solid fa-circle-plus"></i></a>
+                </div>  
+            </div>                 
+        </div>
+
+        <div class="tarjetero">                
+            <div class="datosDoc">
+                <img src="../media/ejemploDoc.jpg" alt="">
+            </div>
+        </div>     
+        
+       
 
     </main>
 
-    <footer class="container-fluid" >
-        <div class="row">
-            <div class="col-4">
+    <footer>
+        <div>
+            <div>
                 <small> Designed by <b> Matias Carrizo </b></small>
             </div>
         </div>

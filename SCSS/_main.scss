@@ -241,9 +241,130 @@
             text-align: left;
         }
 
+        @media (max-width: 860px) {
+            //mobile
+            .tabla__descripcion{
+                display: none;
+            }
+        }        
+    }
+}
 
+/* Estilos Pantalla de Documentos*/
+
+.informe{
+    display: flex;
+    flex-wrap: wrap;
+    @media (max-width: 860px) {
+        //mobile
+        justify-content: center;
+    }  
+
+
+    .documento{
+        background-color: $fondoTarjetaDocumento;
+        background-image: $fondoDocumento;
+        background-repeat: no-repeat;
+        background-size: 30em ;
+        color: $contraste;    
+        width: 25em;
+        height: 15em;
+        padding: 2em;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+        margin: 1em;
+        position: relative;
+        overflow: hidden;
+
+        .botones{
+            color: $contraste;
+            position: absolute;
+            right: 25px;
+            bottom: 20px;
+            font-size: 30px;
+        }
         
+
     }
 
+    .tabla{   
+        display: flex; 
+        justify-content: center;
+        position: relative;
+        background-color: $fondoTablaRevisiones;
+        width: 25em;
+        height: 15em;
+        padding-top: 1em;
+        padding-bottom: 4em;   
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+        margin: 1em;
+        overflow: hidden;
 
+        th{
+            font-size: 12px;
+            text-align: center;
+            margin: 0px;
+            padding: 0;
+            height: 1px;
+            border-bottom: 1px solid $base-oscuro;
+
+        }
+
+        td{
+            padding: 0em;
+            text-align: center;
+            border-bottom: 1px solid $base-oscuro;
+            width: 60px;
+            font-size: 12px;            
+            height: 1px;
+        }
+    }
+
+    a{
+        color: $base-claro;            
+    }
+
+    a:hover{
+        color: $enfacis;
+    }
+
+    .estado{ 
+        position: absolute;
+        right: -50px;
+        top: 20px;
+        color: $contraste;
+        background-color: $enfacis;
+        font-size: 0.7em;
+        font-weight: 400;
+        padding: 0.5em;
+        padding-left: 2em;
+        padding-right: 2em;
+        border-radius: 0.5em;
+        margin: 0.2em;
+        text-align: center;
+        width: 15em;
+        transform: rotate(45deg)
+    }
+
+    .botonRev{
+        color: $contraste;
+        position: absolute;
+        right: 25px;
+        bottom: 20px;
+        font-size: 30px;
+    }
 }
+
+.datosDoc { 
+    overflow: scroll;
+    background-color: $contraste;    
+    height: 30em;
+    width: 52em;
+    padding: 2em;
+    border-radius: 20px;
+    margin: 1em;
+    float: left;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);       
+}
+

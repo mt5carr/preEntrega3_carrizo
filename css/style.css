@@ -34,6 +34,7 @@ nav {
   grid-area: nav;
   height: 100vh;
   background-color: #2b2b2b;
+  background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(80, 80, 80));
 }
 
 main {
@@ -360,6 +361,116 @@ nav .nav__botones .navDesktop .nav__subitems {
 }
 .tarjetero .tabla .a-izquierda {
   text-align: left;
+}
+@media (max-width: 860px) {
+  .tarjetero .tabla .tabla__descripcion {
+    display: none;
+  }
+}
+
+/* Estilos Pantalla de Documentos*/
+.informe {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 860px) {
+  .informe {
+    justify-content: center;
+  }
+}
+.informe .documento {
+  background-color: #2b2b2b;
+  background-image: url("../media/docs.jpg");
+  background-repeat: no-repeat;
+  background-size: 30em;
+  color: #ffffff;
+  width: 25em;
+  height: 15em;
+  padding: 2em;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+  margin: 1em;
+  position: relative;
+  overflow: hidden;
+}
+.informe .documento .botones {
+  color: #ffffff;
+  position: absolute;
+  right: 25px;
+  bottom: 20px;
+  font-size: 30px;
+}
+.informe .tabla {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: #ffffff;
+  width: 25em;
+  height: 15em;
+  padding-top: 1em;
+  padding-bottom: 4em;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+  margin: 1em;
+  overflow: hidden;
+}
+.informe .tabla th {
+  font-size: 12px;
+  text-align: center;
+  margin: 0px;
+  padding: 0;
+  height: 1px;
+  border-bottom: 1px solid #2b2b2b;
+}
+.informe .tabla td {
+  padding: 0em;
+  text-align: center;
+  border-bottom: 1px solid #2b2b2b;
+  width: 60px;
+  font-size: 12px;
+  height: 1px;
+}
+.informe a {
+  color: #e0e0e0;
+}
+.informe a:hover {
+  color: #2D87F0;
+}
+.informe .estado {
+  position: absolute;
+  right: -50px;
+  top: 20px;
+  color: #ffffff;
+  background-color: #2D87F0;
+  font-size: 0.7em;
+  font-weight: 400;
+  padding: 0.5em;
+  padding-left: 2em;
+  padding-right: 2em;
+  border-radius: 0.5em;
+  margin: 0.2em;
+  text-align: center;
+  width: 15em;
+  transform: rotate(45deg);
+}
+.informe .botonRev {
+  color: #ffffff;
+  position: absolute;
+  right: 25px;
+  bottom: 20px;
+  font-size: 30px;
+}
+
+.datosDoc {
+  overflow: scroll;
+  background-color: #ffffff;
+  height: 30em;
+  width: 52em;
+  padding: 2em;
+  border-radius: 20px;
+  margin: 1em;
+  float: left;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
 }
 
 footer {
