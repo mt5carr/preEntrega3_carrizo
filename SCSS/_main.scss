@@ -1,5 +1,17 @@
 @import 'base/variables';
 
+@mixin tarjetaTip{
+    width: 25em;
+    height: 15em;
+    padding: 2em;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+    margin: 1em;
+    position: relative;
+    overflow: hidden;
+}
+
+
 .avisador h2{
     padding: 0%;
     margin: 0%;
@@ -192,23 +204,15 @@
     }
 }
 
-
-
 /* Estilos Pantalla de Proyectos*/
 
 .informe{
     .obra{
-        background-color: $base-oscuro;
+        @include tarjetaTip;        
         background-image: $fondoObra;
         background-repeat: no-repeat;
-        background-size: 50em ;
-        color: $letraObra;    
-        width: 34em;
-        height: 12em;
-        padding: 1em;
-        border-radius: 20px;
-        box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
-        margin: 1em;
+        background-size: 50em ;        
+        color: $contraste;    
 
         h2{
             font-size: 20px;
@@ -279,38 +283,31 @@
     }  
 
     .documento{
-        background-color: $fondoTarjetaDocumento;
-        background-image: $fondoDocumento;
+        @include tarjetaTip;
+        background-image: $fondoDocumento;    
         background-repeat: no-repeat;
-        background-size: 30em ;
-        color: $contraste;    
-        width: 25em;
-        height: 15em;
-        padding: 2em;
-        border-radius: 20px;
-        box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
-        margin: 1em;
-        position: relative;
-        overflow: hidden;
-
-        .botones{
-            color: $contraste;
-            position: absolute;
-            right: 25px;
-            bottom: 20px;
-            font-size: 30px;
-        }      
+        background-size: 30em ;        
+        color: $contraste;           
     }
 
+    .botones{
+        color: $contraste;
+        position: absolute;
+        right: 25px;
+        bottom: 20px;
+        font-size: 30px;
+    }      
+
     .tabla{   
+        @include tarjetaTip;
         display: flex; 
         justify-content: center;
         position: relative;
         background-color: $fondoTablaRevisiones;
-        width: 25em;
-        height: 15em;
+        color: black;
         padding-top: 1em;
         padding-bottom: 4em;   
+        padding-right: 5em; 
         border-radius: 20px;
         box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
         margin: 1em;
@@ -323,7 +320,6 @@
             padding: 0;
             height: 1px;
             border-bottom: 1px solid $base-oscuro;
-
         }
 
         td{
@@ -331,13 +327,19 @@
             text-align: center;
             border-bottom: 1px solid $base-oscuro;
             width: 60px;
-            font-size: 12px;            
+            font-size: 10px;            
             height: 1px;
         }
     }
 
+    .botonRev{
+        @extend .botones;   
+        font-size: 50px;    
+        bottom: 10px;     
+    }
+
     a{
-        color: $base-claro;            
+        color: $base-claro;     
     }
 
     a:hover{
@@ -366,13 +368,6 @@
         transform: rotate(45deg)
     }
 
-    .botonRev{
-        color: $contraste;
-        position: absolute;
-        right: 25px;
-        bottom: 20px;
-        font-size: 30px;
-    }
 }
 
 .datosDoc { 

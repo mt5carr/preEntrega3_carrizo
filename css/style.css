@@ -295,7 +295,7 @@ nav .nav__botones .navDesktop .nav__subitems {
 .tarjetero .tarjeta--ejec img {
   width: 35px;
 }
-.tarjetero .tarjeta--ejec .botones {
+.tarjetero .tarjeta--ejec .botones, .tarjetero .tarjeta--ejec .informe .botonRev, .informe .tarjetero .tarjeta--ejec .botonRev {
   position: absolute;
   left: 200px;
   top: 162px;
@@ -325,17 +325,18 @@ nav .nav__botones .navDesktop .nav__subitems {
 }
 /* Estilos Pantalla de Proyectos*/
 .informe .obra {
-  background-color: #2b2b2b;
+  width: 25em;
+  height: 15em;
+  padding: 2em;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+  margin: 1em;
+  position: relative;
+  overflow: hidden;
   background-image: url("../media/avisaroback.jpg");
   background-repeat: no-repeat;
   background-size: 50em;
   color: #ffffff;
-  width: 34em;
-  height: 12em;
-  padding: 1em;
-  border-radius: 20px;
-  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
-  margin: 1em;
 }
 .informe .obra h2 {
   font-size: 20px;
@@ -393,11 +394,6 @@ nav .nav__botones .navDesktop .nav__subitems {
   }
 }
 .informe .documento {
-  background-color: #2b2b2b;
-  background-image: url("../media/docs.jpg");
-  background-repeat: no-repeat;
-  background-size: 30em;
-  color: #ffffff;
   width: 25em;
   height: 15em;
   padding: 2em;
@@ -406,8 +402,12 @@ nav .nav__botones .navDesktop .nav__subitems {
   margin: 1em;
   position: relative;
   overflow: hidden;
+  background-image: url("../media/docs.jpg");
+  background-repeat: no-repeat;
+  background-size: 30em;
+  color: #ffffff;
 }
-.informe .documento .botones {
+.informe .botones, .informe .botonRev {
   color: #ffffff;
   position: absolute;
   right: 25px;
@@ -415,14 +415,22 @@ nav .nav__botones .navDesktop .nav__subitems {
   font-size: 30px;
 }
 .informe .tabla {
+  width: 25em;
+  height: 15em;
+  padding: 2em;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+  margin: 1em;
+  position: relative;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   position: relative;
   background-color: #ffffff;
-  width: 25em;
-  height: 15em;
+  color: black;
   padding-top: 1em;
   padding-bottom: 4em;
+  padding-right: 5em;
   border-radius: 20px;
   box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
   margin: 1em;
@@ -441,8 +449,12 @@ nav .nav__botones .navDesktop .nav__subitems {
   text-align: center;
   border-bottom: 1px solid #2b2b2b;
   width: 60px;
-  font-size: 12px;
+  font-size: 10px;
   height: 1px;
+}
+.informe .botonRev {
+  font-size: 50px;
+  bottom: 10px;
 }
 .informe a {
   color: #e0e0e0;
@@ -469,13 +481,6 @@ nav .nav__botones .navDesktop .nav__subitems {
   text-align: center;
   width: 15em;
   transform: rotate(45deg);
-}
-.informe .botonRev {
-  color: #ffffff;
-  position: absolute;
-  right: 25px;
-  bottom: 20px;
-  font-size: 30px;
 }
 
 .datosDoc {

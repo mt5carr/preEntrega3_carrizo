@@ -10,4 +10,11 @@
 + Se utilizaron elementos de animación en el inicio del index y en el hover de todos los botones.
 + Para el armado de la totalidad de los estilos se implementó el preprocesador SASS generando un documento principal y parciales tales como uno exclusivo para el alojamiento de las variables (_variables.scss) y parciales para los conenedores principales (_header, _nav, _main, _footer) 
 
-Espero que la entrega cumpla con las expectativas. ¡Saludos! 😀
+## Correcciones aplicadas ✍
++ Se agregó el uso de Mixins en el SCSS ✅
++ Se agregó el uso de Extend en el SCSS ✅
++ Se ajustaron los meta-description de los HTML ✅
+
+Detalle de correcciones 👉 https://abyssinian-burn-1f5.notion.site/Correcci-n-3er-pre-entrega-d41a9e64c0d14785ad4c120ff0d8ceed?pvs=4
+
+Espero que la re-entrega cumpla con las expectativas. ¡Saludos! 😀
